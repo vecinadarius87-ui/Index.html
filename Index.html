@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darius Keneth J. Vecina — CS Portfolio</title>
+  <meta name="description" content="3rd Year CS Student at STIWNU — Incoming OJT Candidate bridging clean code with intuitive design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav id="navbar" role="navigation" aria-label="Primary">
+  <div class="nav-logo"><span>//</span> darius.dev</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="btn-resume" id="resumeBtn" aria-label="Download Resume">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+      <path d="M8 3v7M5 8l3 3 3-3M2 12v1a1 1 0 001 1h10a1 1 0 001-1v-1"/>
+    </svg>
+    Resume
+  </button>
+  <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-menu" role="menu">
+  <a href="#hero" role="menuitem">Home</a>
+  <a href="#about" role="menuitem">About</a>
+  <a href="#skills" role="menuitem">Skills</a>
+  <a href="#projects" role="menuitem">Projects</a>
+  <a href="#contact" role="menuitem">Contact</a>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Available for OJT/Internship · 2026
+    </div>
+
+    <h1 class="hero-name">
+      Darius Keneth<br>J. Vecina
+    </h1>
+
+    <div class="hero-role-line" aria-live="polite">
+      <span class="text-mid">I build as a&nbsp;</span>
+      <span class="typewriter-text" id="typewriter" aria-atomic="true"></span>
+    </div>
+
+    <p class="hero-bio">
+      A <strong>3rd-year Computer Science student</strong> at STI West Negros University, I bridge
+      <strong>clean, purposeful code</strong> with <strong>intuitive design thinking</strong>.
+      Currently sharpening my stack for an impactful industry internship — where engineering
+      rigor meets real-world product delivery.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/>
+          <rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/>
+        </svg>
+        View My Work
+      </a>
+      <a href="#contact" class="btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 4a1 1 0 011-1h10a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4z"/>
+          <path d="M2 4l6 5 6-5"/>
+        </svg>
+        Hire Me
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT / TIMELINE
+============================================================ -->
+<section id="about" class="section">
+  <div class="section-header reveal">
+    <p class="section-eyebrow">Who I Am</p>
+    <h2 class="section-title">Background & Milestones</h2>
+    <div class="section-divider"><div class="section-divider-line"></div></div>
+  </div>
+
+  <div class="about-grid">
+    <!-- Left: Bio + Stats -->
+    <div class="about-intro reveal">
+      <p>
+        I'm <strong>Darius Keneth J. Vecina</strong>, a driven Computer Science student at
+        <strong>STI West Negros University (STIWNU)</strong>, Bacolod City — currently completing
+        my 3rd year and actively preparing for industry deployment through OJT.
+      </p>
+      <p>
+        My work spans <strong>full-stack web development, UI/UX design, and database engineering</strong>.
+        I gravitate toward projects where backend logic and frontend experience reinforce each other —
+        building systems that are both architecturally sound and a pleasure to use.
+      </p>
+      <p>
+        Outside of coursework I pursue <strong>personal builds</strong>: academic tracking tools,
+        logistics databases, and high-fidelity Figma prototypes — treating each as a product,
+        not a school assignment.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3rd</div>
+          <div class="stat-label">Year CS Student</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2026</div>
+          <div class="stat-label">OJT Target Year</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Drive to Build</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Timeline -->
+    <div class="reveal" style="transition-delay:.12s">
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2021 — 2022</p>
+          <p class="timeline-title">1st Year · Foundations</p>
+          <p class="timeline-desc">
+            Introduction to programming logic, computer fundamentals, and problem-solving in C#.
+            Built a strong OOP foundation from day one.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2022 — 2023</p>
+          <p class="timeline-title">2nd Year · Systems & Design</p>
+          <p class="timeline-desc">
+            Dove into data structures, relational database design, and front-end development.
+            Began creating UI prototypes in Figma and exploring responsive web layouts.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2023 — 2024</p>
+          <p class="timeline-title">3rd Year · Applied Projects</p>
+          <p class="timeline-desc">
+            Delivered AcadTrack, LogiRoute DB, and Appaholics UI. Gained real-world experience
+            in full-stack thinking, agile workflows, and production-grade code quality.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <p class="timeline-year">2025 — 2026</p>
+          <p class="timeline-title">3rd Year Complete → OJT Deployment</p>
+          <p class="timeline-desc">
+            Actively seeking an OJT placement where I can contribute to live products,
+            collaborate with engineering teams, and continue growing at the intersection of
+            clean code and intuitive design.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2026 — 2027</p>
+          <p class="timeline-title">4th Year · Capstone & Graduation</p>
+          <p class="timeline-desc">
+            Capstone project development — a production-grade system to be unveiled in senior year.
+            Planned graduation and transition to professional engineering roles.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+============================================================ -->
+<section id="skills" class="section">
+  <div class="section-header reveal">
+    <p class="section-eyebrow">Capabilities</p>
+    <h2 class="section-title">Skills Matrix</h2>
+    <div class="section-divider"><div class="section-divider-line"></div></div>
+    <p class="section-desc" style="margin-top:.8rem">
+      Filter by discipline. Hover each card to see proficiency at a glance.
+    </p>
+  </div>
+
+  <div class="skills-tabs reveal" role="tablist" aria-label="Skill categories">
+    <button class="tab-btn active" data-tab="frontend" role="tab" aria-selected="true">Front-End & UI/UX</button>
+    <button class="tab-btn" data-tab="backend" role="tab" aria-selected="false">Back-End & Programming</button>
+    <button class="tab-btn" data-tab="soft" role="tab" aria-selected="false">Soft Skills & Tools</button>
+  </div>
+
+  <div class="skills-grid" id="skillsGrid">
+
+    <!-- FRONT-END & UI/UX -->
+    <div class="skill-group active" data-group="frontend">
+      <div class="skill-card reveal">
+        <span class="skill-icon">🎨</span>
+        <div class="skill-name">Figma</div>
+        <div class="skill-level"><div class="skill-bar" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.05s">
+        <span class="skill-icon">📐</span>
+        <div class="skill-name">UI/UX Design</div>
+        <div class="skill-level"><div class="skill-bar" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.1s">
+        <span class="skill-icon">🗂️</span>
+        <div class="skill-name">Wireframing</div>
+        <div class="skill-level"><div class="skill-bar" style="width:85%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.15s">
+        <span class="skill-icon">🌐</span>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-level"><div class="skill-bar" style="width:90%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.2s">
+        <span class="skill-icon">✨</span>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-level"><div class="skill-bar" style="width:87%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.25s">
+        <span class="skill-icon">📱</span>
+        <div class="skill-name">Responsive Design</div>
+        <div class="skill-level"><div class="skill-bar" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.3s">
+        <span class="skill-icon">🧩</span>
+        <div class="skill-name">Modern UI Layouts</div>
+        <div class="skill-level"><div class="skill-bar" style="width:83%"></div></div>
+      </div>
+    </div>
+
+    <!-- BACK-END & PROGRAMMING -->
+    <div class="skill-group" data-group="backend">
+      <div class="skill-card reveal">
+        <span class="skill-icon">⚙️</span>
+        <div class="skill-name">C#</div>
+        <div class="skill-level"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.05s">
+        <span class="skill-icon">🗄️</span>
+        <div class="skill-name">Database Management</div>
+        <div class="skill-level"><div class="skill-bar" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.1s">
+        <span class="skill-icon">🔗</span>
+        <div class="skill-name">Relational DB Design</div>
+        <div class="skill-level"><div class="skill-bar" style="width:78%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.15s">
+        <span class="skill-icon">🧱</span>
+        <div class="skill-name">OOP Concepts</div>
+        <div class="skill-level"><div class="skill-bar" style="width:84%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.2s">
+        <span class="skill-icon">🔌</span>
+        <div class="skill-name">REST API Basics</div>
+        <div class="skill-level"><div class="skill-bar" style="width:70%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.25s">
+        <span class="skill-icon">💻</span>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level"><div class="skill-bar" style="width:76%"></div></div>
+      </div>
+    </div>
+
+    <!-- SOFT SKILLS & TOOLS -->
+    <div class="skill-group" data-group="soft">
+      <div class="skill-card reveal">
+        <span class="skill-icon">🔍</span>
+        <div class="skill-name">Problem Solving</div>
+        <div class="skill-level"><div class="skill-bar" style="width:92%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.05s">
+        <span class="skill-icon">🌿</span>
+        <div class="skill-name">Git / Version Control</div>
+        <div class="skill-level"><div class="skill-bar" style="width:78%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.1s">
+        <span class="skill-icon">🔄</span>
+        <div class="skill-name">Agile Mindset</div>
+        <div class="skill-level"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.15s">
+        <span class="skill-icon">🤝</span>
+        <div class="skill-name">Team Collaboration</div>
+        <div class="skill-level"><div class="skill-bar" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.2s">
+        <span class="skill-icon">💬</span>
+        <div class="skill-name">Technical Communication</div>
+        <div class="skill-level"><div class="skill-bar" style="width:84%"></div></div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:.25s">
+        <span class="skill-icon">📋</span>
+        <div class="skill-name">Documentation</div>
+        <div class="skill-level"><div class="skill-bar" style="width:79%"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+============================================================ -->
+<section id="projects" class="section">
+  <div class="section-header reveal">
+    <p class="section-eyebrow">Portfolio</p>
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="section-divider"><div class="section-divider-line"></div></div>
+    <p class="section-desc" style="margin-top:.8rem">
+      Shipped builds from 3rd year — each card is a living record of real engineering decisions.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1: AcadTrack -->
+    <article class="project-card reveal" aria-label="AcadTrack project">
+      <div class="project-img-wrap">
+        <canvas class="project-img-canvas" id="canvas1" aria-hidden="true"></canvas>
+        <span class="project-number">01</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">C#</span>
+          <span class="tag">OOP</span>
+          <span class="tag blue">Database</span>
+          <span class="tag">Module Mgmt</span>
+        </div>
+        <h3 class="project-name">AcadTrack</h3>
+        <p class="project-desc">
+          An academic tracking and subject review system designed to help students manage
+          modules, track progress, and review course content in a structured interface.
+          Built with C# and a relational database backend featuring full CRUD operations.
+        </p>
+        <div class="project-actions">
+          <button class="btn-ghost" onclick="projectAlert('AcadTrack','source')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4l-3 4 3 4M11 4l3 4-3 4M9 2l-2 12"/></svg>
+            Source Code
+          </button>
+          <button class="btn-ghost" onclick="projectAlert('AcadTrack','demo')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3H3a1 1 0 00-1 1v9a1 1 0 001 1h10a1 1 0 001-1V9"/><path d="M10 2h4v4M14 2L8 8"/></svg>
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: LogiRoute DB -->
+    <article class="project-card reveal" style="transition-delay:.1s" aria-label="LogiRoute DB project">
+      <div class="project-img-wrap">
+        <canvas class="project-img-canvas" id="canvas2" aria-hidden="true"></canvas>
+        <span class="project-number">02</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">SQL</span>
+          <span class="tag blue">ERD Design</span>
+          <span class="tag">Normalization</span>
+          <span class="tag">Logistics</span>
+        </div>
+        <h3 class="project-name">LogiRoute DB</h3>
+        <p class="project-desc">
+          A relational database system engineered for shipment logistics and cargo hierarchy
+          tracking. Features a normalized schema, optimized queries for route management, and
+          reporting views designed for cargo dispatchers and warehouse staff.
+        </p>
+        <div class="project-actions">
+          <button class="btn-ghost" onclick="projectAlert('LogiRoute DB','source')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4l-3 4 3 4M11 4l3 4-3 4M9 2l-2 12"/></svg>
+            Source Code
+          </button>
+          <button class="btn-ghost" onclick="projectAlert('LogiRoute DB','demo')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3H3a1 1 0 00-1 1v9a1 1 0 001 1h10a1 1 0 001-1V9"/><path d="M10 2h4v4M14 2L8 8"/></svg>
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: Appaholics UI -->
+    <article class="project-card reveal" style="transition-delay:.2s" aria-label="Appaholics UI project">
+      <div class="project-img-wrap">
+        <canvas class="project-img-canvas" id="canvas3" aria-hidden="true"></canvas>
+        <span class="project-number">03</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Figma</span>
+          <span class="tag blue">UI/UX</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Mobile</span>
+        </div>
+        <h3 class="project-name">Appaholics UI</h3>
+        <p class="project-desc">
+          A high-fidelity mobile commerce interface designed end-to-end in Figma — from
+          user persona research and information architecture to a polished component library
+          and interactive prototype ready for developer handoff.
+        </p>
+        <div class="project-actions">
+          <button class="btn-ghost" onclick="projectAlert('Appaholics UI','figma')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4l-3 4 3 4M11 4l3 4-3 4M9 2l-2 12"/></svg>
+            Figma File
+          </button>
+          <button class="btn-ghost" onclick="projectAlert('Appaholics UI','demo')">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3H3a1 1 0 00-1 1v9a1 1 0 001 1h10a1 1 0 001-1V9"/><path d="M10 2h4v4M14 2L8 8"/></svg>
+            Prototype
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CAPSTONE PLACEHOLDER -->
+    <article class="project-card card-capstone reveal" style="transiti
